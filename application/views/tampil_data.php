@@ -4,6 +4,7 @@
 	<base href="<?=base_url()?>">
 	<meta charset="UTF-8">
 	<title>UTS</title>
+	<link href="<?php echo base_url('assets/datatables/css/jquery.dataTables.min.css')?>" rel="stylesheet">
 </head>
 <body>
 	 <div class="content-wrapper">
@@ -41,9 +42,8 @@
 	</thead>
 		<?php
 		 $no = 1; foreach ($isi as $k0 => $v0) {
-		?>
+		?> 
 
-		
 		<tr>
 			<td><?php echo $no++; ?></td>
 			<td><?php echo $v0['nim'] ?></td>
@@ -62,7 +62,7 @@
 </div>
 </div>
 </div>
-
-
+	<script src="<?php echo base_url('assets/jquery/jquery-2.2.3.min.js')?>"></script>
+	<script src="<?php echo base_url('assets/datatables/js/jquery.dataTables.min.js')?>"></script>
 </body>
 
